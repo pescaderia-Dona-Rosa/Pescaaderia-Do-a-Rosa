@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pescadería Doña Rosa | Frescura del mar directo a tu mesa</title>
+    <meta name="description" content="En Pescadería Doña Rosa nos especializamos en ofrecer productos frescos del mar, seleccionados con cuidado para llevar calidad, sabor y frescura a cada mesa.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo" data-nav="inicio">
+                <!-- Placeholder para el logo -->
+                <div class="logo-img-wrapper">
+                    <img src="img/logo-dona-rosa.png" alt="Logo Pescadería Doña Rosa" onerror="this.src='https://via.placeholder.com/50?text=Logo'">
+                </div>
+                <span>Doña Rosa</span>
+            </a>
+            
+            <button class="hamburger-menu" aria-label="Abrir menú" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#inicio" class="nav-link active" data-nav="inicio">Inicio</a>
+                <a href="#recetas" class="nav-link" data-nav="recetas">Recetas</a>
+                <a href="#catalogo" class="nav-link" data-nav="catalogo">Catálogo</a>
+                <a href="#contacto" class="nav-link" data-nav="contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- ==============================================
+             SECCIÓN 1: INICIO
+        ============================================== -->
+        <section id="inicio" class="tab-section active">
+            <!-- Hero -->
+            <div class="hero">
+                <div class="container hero-container">
+                    <div class="hero-text animate-up">
+                        <span class="badge">Calidad Premium</span>
+                        <h1>Pescadería Doña Rosa</h1>
+                        <h2>Frescura del mar directo a tu mesa</h2>
+                        <p>Pescados, mariscos y productos seleccionados con calidad para tu familia.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="window.app.switchTab('catalogo')">
+                                Ver catálogo <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="btn btn-outline" onclick="window.app.switchTab('recetas')">
+                                Explorar recetas
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image animate-up delay-1">
+                        <!-- Imagen principal -->
+                        <div class="image-wrapper">
+                            <img src="img/imagen-1.jpg" alt="Pescados frescos" class="img-fluid hero-img" onerror="this.src='https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&q=80&w=800'">
+                            <div class="floating-card">
+                                <i class="fas fa-anchor"></i>
+                                <span>100% Fresco</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frescura y calidad -->
+            <div class="features py-5 bg-light">
+                <div class="container">
+                    <div class="section-title text-center animate-on-scroll">
+                        <span class="subtitle">Nuestro Compromiso</span>
+                        <h2>Frescura, calidad y confianza</h2>
+                        <p class="mx-auto">En Pescadería Doña Rosa nos especializamos en ofrecer productos frescos del mar, seleccionados con cuidado para llevar calidad, sabor y frescura a cada mesa.</p>
+                    </div>
+                    <div class="features-grid mt-4">
+                        <div class="feature-card animate-on-scroll">
+                            <div class="icon-box"><i class="fas fa-fish"></i></div>
+                            <h3>Productos frescos</h3>
+                            <p>Garantizamos la frescura de nuestros productos, directamente del mar a tus manos.</p>
+                        </div>
+                        <div class="feature-card animate-on-scroll delay-1">
+                            <div class="icon-box"><i class="fas fa-check-circle"></i></div>
+                            <h3>Selección diaria</h3>
+                            <p>Revisamos nuestros productos diariamente para ofrecerte siempre lo mejor.</p>
+                        </div>
+                        <div class="feature-card animate-on-scroll delay-2">
+                            <div class="icon-box"><i class="fas fa-water"></i></div>
+                            <h3>Sabor de la bahía de Samaná</h3>
+                            <p>Auténtico sabor local que resalta en todas tus preparaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos destacados -->
+            <div class="highlights py-5">
+                <div class="container">
+                    <div class="section-title text-center animate-on-scroll">
+                        <h2>Productos destacados</h2>
+                    </div>
+                    <div class="highlights-grid mt-4">
+                        <div class="product-highlight animate-on-scroll">
+                            <div class="highlight-img">
+                                <img src="img/pescado-fresco.jpg" alt="Pescado fresco" onerror="this.src='https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&q=80&w=600'">
+                            </div>
+                            <h3>Pescado fresco</h3>
+                        </div>
+                        <div class="product-highlight animate-on-scroll delay-1">
+                            <div class="highlight-img">
+                                <img src="img/camarones.jpg" alt="Camarones" onerror="this.src='https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&q=80&w=600'">
+                            </div>
+                            <h3>Camarones</h3>
+                        </div>
+                        <div class="product-highlight animate-on-scroll delay-2">
+                            <div class="highlight-img">
+                                <img src="img/albondigas-pescado.jpg" alt="Albóndigas de pescado" onerror="this.src='https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&q=80&w=600'">
+                            </div>
+                            <h3>Albóndigas de pescado</h3>
+                        </div>
+                        <div class="product-highlight animate-on-scroll delay-3">
+                            <div class="highlight-img">
+                                <img src="img/filete-pescado.jpg" alt="Filetes de pescado" onerror="this.src='https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&q=80&w=600'">
+                            </div>
+                            <h3>Filetes de pescado</h3>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-outline" onclick="window.app.switchTab('catalogo')">Ver todos los productos</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galería Elegante -->
+            <div class="gallery py-5 bg-light">
+                <div class="container">
+                    <div class="gallery-grid">
+                        <div class="gallery-item item-1 animate-on-scroll">
+                            <img src="img/imagen-2.jpg" alt="Pescadería interior" onerror="this.src='https://images.unsplash.com/photo-1549405406-8dcebbcae072?auto=format&fit=crop&q=80&w=800'">
+                        </div>
+                        <div class="gallery-item item-2 animate-on-scroll delay-1">
+                            <img src="img/imagen-3.jpg" alt="Mesa con productos de mar" onerror="this.src='https://images.unsplash.com/photo-1565681024317-5e9bc662cb97?auto=format&fit=crop&q=80&w=800'">
+                        </div>
+                        <div class="gallery-item item-3 animate-on-scroll delay-2">
+                            <img src="img/imagen-4.jpg" alt="Plato servido" onerror="this.src='https://images.unsplash.com/photo-1594041680534-e8c8cdebd211?auto=format&fit=crop&q=80&w=800'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECCIÓN 2: RECETAS
+        ============================================== -->
+        <section id="recetas" class="tab-section bg-light">
+            <div class="page-header pattern-bg">
+                <div class="container text-center text-white relative z-10">
+                    <div class="animate-up">
+                        <h1>Recetario del Mar</h1>
+                        <p>Descubre formas deliciosas de preparar nuestros productos</p>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="container py-5">
+                <!-- Filtros JS inyectará botones aquí -->
+                <div class="filter-group mb-4" id="recetas-filters">
+                    <!-- Javascript generated -->
+                </div>
+
+                <!-- Contenedor de Recetas -->
+                <div class="recipes-grid mt-4" id="recetas-grid">
+                    <!-- Javascript generated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECCIÓN 3: CATÁLOGO
+        ============================================== -->
+        <section id="catalogo" class="tab-section">
+            <div class="page-header pattern-bg">
+                <div class="container text-center text-white relative z-10">
+                    <div class="animate-up">
+                        <h1>Nuestro Catálogo</h1>
+                        <p>La mejor selección de productos del mar a tu disposición</p>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="container py-5">
+                
+                <div class="catalog-note mb-4 animate-up">
+                    <p><em>“La disponibilidad de productos puede variar según la pesca y selección del día. Para confirmar existencia y precio, contáctanos directamente.”</em></p>
+                </div>
+
+                <!-- Filtros JS inyectará botones aquí -->
+                <div class="filter-group mb-4" id="catalogo-filters">
+                    <!-- Javascript generated -->
+                </div>
+
+                <!-- Contenedor de Catálogo -->
+                <div class="catalog-grid mt-4" id="catalogo-grid">
+                    <!-- Javascript generated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECCIÓN 4: CONTACTO
+        ============================================== -->
+        <section id="contacto" class="tab-section bg-light">
+            <div class="container py-5">
+                <div class="contact-card animate-up">
+                    <div class="contact-info">
+                        <h2>Contáctanos</h2>
+                        <p class="subtitle">Consulta disponibilidad, precios y productos frescos directamente con Pescadería Doña Rosa.</p>
+                        
+                        <div class="contact-methods mt-4">
+                            <div class="contact-item">
+                                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <p>[COLOCAR TELÉFONO]</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>[COLOCAR WHATSAPP]</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon"><i class="fab fa-instagram"></i></div>
+                                <div>
+                                    <h4>Instagram</h4>
+                                    <p>@pescaderiadonarosa98</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                                <div>
+                                    <h4>Facebook</h4>
+                                    <p>José Manuel Henríquez Burgos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-actions mt-4">
+                            <a href="https://wa.me/XXXXXXXXXX" target="_blank" class="btn btn-primary w-100 mb-2">
+                                <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                            </a>
+                            <a href="https://instagram.com/pescaderiadonarosa98" target="_blank" class="btn btn-outline w-100">
+                                <i class="fab fa-instagram"></i> Ver Instagram
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h3>Envíanos un mensaje</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" placeholder="Tu número de contacto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content text-center">
+            <img src="img/logo-dona-rosa.png" alt="Logo" class="footer-logo mb-2" onerror="this.style.display='none'">
+            <h3>Pescadería Doña Rosa</h3>
+            <p>Frescura del mar directo a tu mesa</p>
+            <div class="social-links mt-2">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright mt-3">&copy; <span id="year"></span> Pescadería Doña Rosa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Whatsapp Flotante -->
+    <a href="#" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal Receta -->
+    <div class="modal" id="recipe-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-body" id="recipe-modal-body">
+                <!-- Javascript will inject recipe details here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
